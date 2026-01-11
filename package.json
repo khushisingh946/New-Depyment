@@ -1,0 +1,19 @@
+
+{
+  "name": "nexus-ai-workspace",
+  "version": "1.0.0",
+  "description": "AI-Powered Personal Dashboard",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve ."
+  },
+  "keywords": [
+    "ai",
+    "gemini",
+    "dashboard",
+    "react",
+    "workspace"
+  ],
+  "author": "",
+  "license": "MIT"
+}

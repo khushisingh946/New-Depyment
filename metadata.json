@@ -1,0 +1,8 @@
+{
+  "name": "Nexus AI-Powered Workspace",
+  "description": "A high-performance personal dashboard featuring task management, data visualization with Recharts, and a built-in AI assistant powered by Gemini 3 Flash.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
