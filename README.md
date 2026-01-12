@@ -9,11 +9,18 @@ If GitHub is asking you to "upgrade," it is because your repository is currently
 - **The Fix**: Go to **Settings** > **General** > Scroll to **Danger Zone** > **Change visibility** > **Make public**.
 - Once public, go to **Settings** > **Pages** and enable it for the `main` branch.
 
-### 2. Vercel / Netlify (Free for Private Repos)
-If you want to keep your code private but still host the app for free:
-1. Connect your GitHub account to [Vercel](https://vercel.com) or [Netlify](https://netlify.com).
-2. Select this repository.
-3. It will automatically detect the settings and deploy your `index.html`.
+### 2. Custom Domain Setup
+1.  **Update CNAME File**: I have added a `CNAME` file to your project. **Open it and change the text inside to match your custom domain exactly** (e.g., `www.example.com`).
+2.  **DNS Records**: Ensure your domain registrar has the A records (185.199.108.153, etc.) and the CNAME record pointing to `username.github.io`.
+
+## 🛠️ Troubleshooting "404 - Site Not Found"
+
+1.  **Check the Actions Tab**: In your GitHub repository, click on the **Actions** tab. Look for a workflow named "pages-build-deployment". 
+    - If it's **Red**: Click it to see the error. Usually, it's a missing file or a syntax error.
+    - If it's **Yellow**: It is still building. Wait 2–3 minutes.
+    - If it's **Green**: The site is live!
+2.  **Enforce HTTPS**: In Settings > Pages, make sure "Enforce HTTPS" is checked. It might be disabled for a few minutes while GitHub issues your SSL certificate.
+3.  **Clear Browser Cache**: Sometimes your browser remembers the 404 page. Try opening your domain in an Incognito/Private window.
 
 ## 💻 Local Development
 
